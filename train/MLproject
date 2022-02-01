@@ -1,0 +1,12 @@
+name: sksurv_rsf_plane
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 50}
+      min_samples_split: {type: int, default: 10}
+      min_samples_leaf: {type: int, default: 15}
+
+    command: "python train.py --n_estimators {n_estimators} --min_samples_split {min_samples_split} --min_samples_leaf {min_samples_leaf}"

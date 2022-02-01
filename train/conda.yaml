@@ -1,0 +1,11 @@
+name: plane_parts_survival_mlflow
+channels:
+  - sebp
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3
+  - pip
+  - scikit-survival=0.17.0=py37h5685391_0
+  - pip:
+    - mlflow==1.23.1
